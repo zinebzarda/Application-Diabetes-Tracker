@@ -11,7 +11,7 @@ public class Contriller {
     @GetMapping("/")
     public String showEtudients(ModelMap modelMap) throws SQLException, ClassNotFoundException {
 
-        modelMap.addAttribute("shows"," test zardaaaaa girl of hassan ");
+        modelMap.addAttribute("shows"," test  ");
         return "index";
     }
 }
