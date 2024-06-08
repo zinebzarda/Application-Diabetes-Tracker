@@ -45,6 +45,14 @@ public class GlycemiaContoller {
     }
 
 
+    @GetMapping("/glucose-chart")
+    public String showGlucoseChart(Model model) {
+        List<Glycemia> glucoseReadings = service.getAllGlycemia();
+        model.addAttribute("glucoseReadings", glucoseReadings);
+        return "chart-glucose";
+    }
+
+
 
 }
 
